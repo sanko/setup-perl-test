@@ -27,7 +27,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Setup perl
-        uses: sanko/setup-perl@v0
+        uses: sanko/setup-perl@v0.0.2
         with:
           version: ${{ matrix.perl }}
           milliseconds: 12
