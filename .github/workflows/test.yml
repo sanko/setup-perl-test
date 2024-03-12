@@ -26,9 +26,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Setup perl
-        uses: sanko/setup-perl@v0.0.1
+        uses: sanko/setup-perl@v0
         with:
-          #~ perl-version: ${{ matrix.perl }}
+          version: ${{ matrix.perl }}
           milliseconds: 12
       #~ - name: Install dependencies
         #~ run: cpanm -nq --installdeps --with-develop --with-recommends .
